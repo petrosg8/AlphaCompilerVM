@@ -1,0 +1,103 @@
+lvalue -> ID: line 1
+int number: line 1
+primary -> const: line 1
+term -> primary: line 1
+expr -> term: line 1
+assignment: line 1
+expr -> assign: line 1
+stmt -> expr;: line 1
+stmtlist -> stmt: line 1
+lvalue -> ID: line 2
+int number: line 2
+primary -> const: line 2
+term -> primary: line 2
+expr -> term: line 2
+assignment: line 2
+expr -> assign: line 2
+stmt -> expr;: line 2
+stmtlist -> stmtlist stmt: line 2
+lvalue -> ID: line 5
+primary -> lvalue: line 5
+term -> primary: line 5
+expr -> term: line 5
+lvalue -> ID: line 5
+primary -> lvalue: line 5
+term -> primary: line 5
+expr -> term: line 5
+relexpr: line 5
+expr -> relexpr: line 5
+ifprefix: line 5
+block: line 6
+lvalue -> ID: line 6
+primary -> const: line 6
+term -> primary: line 6
+expr -> term: line 6
+elist -> expr: line 6
+normcall: line 6
+callsuffix -> normcall: line 6
+call -> lvalue callsuffix: line 6
+primary -> call: line 6
+term -> primary: line 6
+expr -> term: line 6
+stmt -> expr;: line 6
+stmtlist -> stmt: line 6
+stmt -> block: line 7
+elseprefix: line 7
+block: line 8
+lvalue -> ID: line 8
+primary -> const: line 8
+term -> primary: line 8
+expr -> term: line 8
+elist -> expr: line 8
+normcall: line 8
+callsuffix -> normcall: line 8
+call -> lvalue callsuffix: line 8
+primary -> call: line 8
+term -> primary: line 8
+expr -> term: line 8
+stmt -> expr;: line 8
+stmtlist -> stmt: line 8
+stmt -> block: line 9
+ifstmt -> ifelse: line 9
+stmt -> if: line 9
+stmtlist -> stmtlist stmt: line 9
+program -> stmtlist: line 9
+
+---------- Scope Lists ----------
+----------------- Scope  #0 -----------------
+[library function] "print" (line 0) (scope 0) 
+[library function] "input" (line 0) (scope 0) 
+[library function] "objectmemberkeys" (line 0) (scope 0) 
+[library function] "objecttotalmembers" (line 0) (scope 0) 
+[library function] "objectcopy" (line 0) (scope 0) 
+[library function] "totalarguments" (line 0) (scope 0) 
+[library function] "argument" (line 0) (scope 0) 
+[library function] "typeof" (line 0) (scope 0) 
+[library function] "strtonum" (line 0) (scope 0) 
+[library function] "sqrt" (line 0) (scope 0) 
+[library function] "cos" (line 0) (scope 0) 
+[library function] "sin" (line 0) (scope 0) 
+[global variable] "x" (line 1) (scope 0) 
+[local variable] "$0" (line 1) (scope 0) 
+[global variable] "y" (line 2) (scope 0) 
+
+----------------- Scope  #1 -----------------
+[local variable] "$1" (line 6) (scope 1) 
+
+---------- Symbol Table ----------
+Bucket 27: Function: objectmemberkeys (scope: 0, line: 0)
+Bucket 27: Function: argument (scope: 0, line: 0)
+Bucket 38: Function: sqrt (scope: 0, line: 0)
+Bucket 68: Function: strtonum (scope: 0, line: 0)
+Bucket 84: Variable: $0 (scope: 0, line: 1, scopespace: programVar , offset: 1) 
+Bucket 85: Variable: $1 (scope: 1, line: 6, scopespace: programVar , offset: 3) 
+Bucket 120: Variable: x (scope: 0, line: 1, scopespace: programVar , offset: 0) 
+Bucket 121: Variable: y (scope: 0, line: 2, scopespace: programVar , offset: 2) 
+Bucket 137: Function: print (scope: 0, line: 0)
+Bucket 140: Function: input (scope: 0, line: 0)
+Bucket 234: Function: objectcopy (scope: 0, line: 0)
+Bucket 243: Function: typeof (scope: 0, line: 0)
+Bucket 246: Function: objecttotalmembers (scope: 0, line: 0)
+Bucket 270: Function: totalarguments (scope: 0, line: 0)
+Bucket 325: Function: cos (scope: 0, line: 0)
+Bucket 330: Function: sin (scope: 0, line: 0)

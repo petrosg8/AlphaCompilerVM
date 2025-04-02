@@ -1,0 +1,26 @@
+Number Constants:
+1.000000
+2.000000
+
+String Constants:
+GOOD
+NOTGOOD
+
+Named Library Functions:
+print
+input
+objectmemberkeys
+objecttotalmembers
+objectcopy
+totalarguments
+argument
+typeof
+strtonum
+sqrt
+cos
+sin
+
+User Functions:
+
+Boolean Constants:
+
